@@ -1,3 +1,5 @@
+sudo apt install {package_name}
+
 # Machine: Meow
 
 Ping is a ICMP echo request, this can be used to test for connection
@@ -65,4 +67,4 @@ pipes and is not part of the file system.)
   - **nmap -p- -sV {target_IP}** 
     - **-sV** switch stands for version detection 
     - **-p-** to scan ports from 1 through 65535
-  - ![redeemer_nmap](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/redeemer_nmap.png?raw=true)
+  ![redeemer_nmap](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/redeemer_nmap.png?raw=true)
