@@ -51,7 +51,9 @@ if ($count==1){
  will read ```$sql="SELECT * FROM users WHERE username='admin'```, so password will be skipped with this SQL injection
  
 ![appointment_select](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/appointment_select.png?raw=true)
- 
+
+We can login with any password in the password field
+
 ![appointment_sql](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/appointment_sql.png?raw=true)
 
 ![appointment_sql1](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/appointment_sql1.png?raw=true)
