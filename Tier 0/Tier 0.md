@@ -58,3 +58,9 @@ pipes and is not part of the file system.)
   ![dancing_smbclient2](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_smbclient2.png?raw=true)
   - Use command **cat** (concatenate) to read data from file and output the content
   ![dancing_cat](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_cat.png?raw=true)
+
+
+# Machine: Redeemer
+- **sudo nmap {target_IP}**
+  - **sudo nmap -sV {target_IP}**
+    - **-sV** switch stands for version detection 
