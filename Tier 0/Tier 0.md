@@ -62,5 +62,7 @@ pipes and is not part of the file system.)
 
 # Machine: Redeemer
 - **sudo nmap {target_IP}**
-  - **sudo nmap -sV {target_IP}**
+  - **nmap -p- -sV {target_IP}** 
     - **-sV** switch stands for version detection 
+    - **-p-** to scan ports from 1 through 65535
+  - ![redeemer_nmap](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/redeemer_nmap.png?raw=true)
