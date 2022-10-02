@@ -29,6 +29,7 @@ Use command **ls** to show directory folders
 Use command **cat** (concatenate) to read data from file and output the content
 ![meow_telnet3](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/meow_telnet3.png?raw=true)
 
+
 # Machine: Fawn
 FTP (file transfer protocol)
 - **ftp {target_IP}** 
@@ -42,12 +43,14 @@ FTP (file transfer protocol)
   - Use command **cat** (concatenate) to read data from file and output the content
   ![fawn_cat](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/fawn_cat.png?raw=true)
 
+
 # Machine: Dancing
 SMB (Server Message Block) port 445
 - **smbclient -L {target_IP}**
   - **-L** will list all services available on the server
   ![dancing_smbclient](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_smbclient.png?raw=true)
   - **smb client \\\\{target_IP}\\{sharename}**
+  - Trying blank passwords for each share
   ![dancing_smbclient1](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_smbclient1.png?raw=true)
   - (IPC$ - The inter-process communication share. Used for inter-process communication via named
 pipes and is not part of the file system.)
