@@ -4,7 +4,7 @@
 
 # Machine: Meow
 
-## telnet
+## Exploit: Telnet
 
 Ping is a ICMP echo request, this can be used to test for connection
 - ```ping {target_IP}```
@@ -41,6 +41,9 @@ Try accounts:
 
 
 # Machine: Fawn
+
+## Exploit: FTP
+
 FTP (file transfer protocol) is the network protocol for transmitting files between computers
 - ```ftp {target_IP}```
 
@@ -63,6 +66,9 @@ FTP (file transfer protocol) is the network protocol for transmitting files betw
 
 
 # Machine: Dancing
+
+## Exploit: SMB
+
 SMB (Server Message Block) port 445
 - ```smbclient -L {target_IP}```
   - ```-L``` will list all services available on the server
@@ -86,6 +92,9 @@ pipes and is not part of the file system.)
 
 
 # Machine: Redeemer
+
+## Exploit: Redis
+
 - ```sudo nmap {target_IP}```
   - ```nmap -p- -sV {target_IP}```
     - ```-sV``` switch stands for version detection 
