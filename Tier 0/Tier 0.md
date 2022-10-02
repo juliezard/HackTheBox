@@ -88,6 +88,7 @@ pipes and is not part of the file system.)
   - ```nmap -p- -sV {target_IP}```
     - ```-sV``` switch stands for version detection 
     - ```-p-``` to scan ports from 1 through 65535
+      - example: ```nmap -p 21-25,80,139,8080 192.168.1.1``` will scan ports 21-25,80,139, and 8080 on ip 192.168.1.1
     
   ![redeemer_nmap](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/redeemer_nmap.png?raw=true)
 
