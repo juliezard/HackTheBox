@@ -48,7 +48,7 @@ if ($count==1){
  
  ```$sql="SELECT * FROM users WHERE username='$username' AND password='$password'";```
  
- will read ```$sql="SELECT * FROM users WHERE username='admin'#``` , so password will be skipped with this SQL injection
+ will read ```$sql="SELECT * FROM users WHERE username='admin'```, so password will be skipped with this SQL injection
  
 ![appointment_select](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/appointment_select.png?raw=true)
  
