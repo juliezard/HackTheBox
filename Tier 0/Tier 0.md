@@ -109,6 +109,8 @@ SSDs
   ![redeemer_redis2](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/redeemer_redis2.png?raw=true)
   - The keyspace section provides statistics on the main dictionary of each database. The statistics include the
 number of keys, and the number of keys with an expiration
-    - ```select *``` list all the keys present in the database using the command :
+    - ```select #``` select which key from the keyspace (db0, select 0)
+    - ```keys *``` list all the keys present in the database
+    - ```get <key>``` view the values stored for a corresponding key
     
   ![redeemer_redis3](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/redeemer_redis3.png?raw=true)
