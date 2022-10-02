@@ -114,4 +114,4 @@ number of keys, and the number of keys with an expiration
     - ```keys *``` list all the keys present in the database
     - ```get <key>``` view the values stored for a corresponding key
     
-  ![redeemer_redis3](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/redeemer_redis3.png?raw=true)
+  ![redeemer_redis3](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%200/images/redeemer_redis3.png?raw=true)
