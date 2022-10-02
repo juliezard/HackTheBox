@@ -8,6 +8,7 @@ Ping is a ICMP echo request, this can be used to test for connection
 - **ping {target_IP}**
   - **ping {target_IP} -c 4** 
     - Counts 4 echo replies and stop
+
 ![meow_ping](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/meow_ping.png?raw=true)
 
 Nmap is a tool used to find open ports on a target
