@@ -1,6 +1,6 @@
 #  Machine: Appointment
 
-## SQL Injection
+## Exploit: SQL Injection
 
 Nmap is a tool used to find open ports on a target
 - ```sudo nmap {target_IP}```
