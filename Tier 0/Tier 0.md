@@ -1,6 +1,6 @@
-**sudo apt install {package_name}**
+```sudo apt install {package_name}```
 
-**sudo apt-get update** downloads the package lists from the repositories and "updates" them to get information on the newest versions of packages and their dependencies
+```sudo apt-get update``` downloads the package lists from the repositories and "updates" them to get information on the newest versions of packages and their dependencies
 
 # Machine: Meow
 
@@ -14,7 +14,7 @@ Ping is a ICMP echo request, this can be used to test for connection
 Nmap is a tool used to find open ports on a target
 - ```sudo nmap {target_IP}```
   - ```sudo nmap -sV {target_IP}```
-    - **-sV** switch stands for version detection 
+    - ```-sV``` switch stands for version detection 
 - telnet is on port 23
 
 ![meow_nmap](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/meow_nmap.png?raw=true)
@@ -67,7 +67,7 @@ SMB (Server Message Block) port 445
 
   ![dancing_smbclient](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_smbclient.png?raw=true)
   
-  - **smb client \\\\{target_IP}\\{sharename}**
+  - ```smb client \\\\{target_IP}\\{sharename}```
   - Trying blank passwords for each share
   
   ![dancing_smbclient1](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_smbclient1.png?raw=true)
@@ -86,8 +86,8 @@ pipes and is not part of the file system.)
 # Machine: Redeemer
 - ```sudo nmap {target_IP}```
   - ```nmap -p- -sV {target_IP}```
-    - **-sV** switch stands for version detection 
-    - **-p-** to scan ports from 1 through 65535
+    - ```-sV``` switch stands for version detection 
+    - ```-p-``` to scan ports from 1 through 65535
     
   ![redeemer_nmap](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/redeemer_nmap.png?raw=true)
 
@@ -95,8 +95,13 @@ pipes and is not part of the file system.)
 database, cache, and message broker. The data is stored in a dictionary format having key-value pairs. It is
 typically used for short term storage of data that needs fast retrieval. Redis does backup data to hard drives
 to provide consistency.
+
 The command-line interface (CLI) is a powerful tool that gives you complete access to Redis’s data and its
 functionalities if you are developing a software or tool that needs to interact with it.
+
+There are different types of databases and one among them is **Redis**, which is an **'in-memory' database**. In-memory databases are the ones that rely essentially on the primary memory for data storage (meaning that the database is managed in the RAM of the system); in contrast to databases that store data on the disk or
+SSDs
+
 - ```redis-cli -h {target_IP}```
   -  info returns information and statistics about the Redis server
 
