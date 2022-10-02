@@ -1,4 +1,5 @@
-sudo apt install {package_name}
+**sudo apt install {package_name}**
+**sudo apt-get update** downloads the package lists from the repositories and "updates" them to get information on the newest versions of packages and their dependencies
 
 # Machine: Meow
 
@@ -89,7 +90,11 @@ pipes and is not part of the file system.)
     
   ![redeemer_nmap](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/redeemer_nmap.png?raw=true)
 
-- Redis (REmote DIctionary Server) is an open-source advanced NoSQL key-value data store used as a
+**Redis** (REmote DIctionary Server) is an open-source advanced NoSQL key-value data store used as a
 database, cache, and message broker. The data is stored in a dictionary format having key-value pairs. It is
 typically used for short term storage of data that needs fast retrieval. Redis does backup data to hard drives
 to provide consistency.
+The command-line interface (CLI) is a powerful tool that gives you complete access to Redis’s data and its
+functionalities if you are developing a software or tool that needs to interact with it.
+- **redis-cli -h {target_IP}**
+  -  info returns information and statistics about the Redis server
