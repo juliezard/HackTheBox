@@ -4,6 +4,8 @@
 
 # Machine: Meow
 
+## telnet
+
 Ping is a ICMP echo request, this can be used to test for connection
 - ```ping {target_IP}```
   - ```ping {target_IP} -c 4```
