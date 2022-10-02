@@ -67,7 +67,7 @@ SMB (Server Message Block) port 445
 
   ![dancing_smbclient](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_smbclient.png?raw=true)
   
-  - ```smb client \\\\{target_IP}\\{sharename}```
+  - ```smbclient \\\\{target_IP}\\{sharename}```
   - Trying blank passwords for each share
   
   ![dancing_smbclient1](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_smbclient1.png?raw=true)
