@@ -1,0 +1,4 @@
+# Connecting to HTB
+Download the .ovpn file and put it into the Linux VM
+Navigate to the folder with the .ovpn file and use command sudo openvpn <filename>.ovpn
+When the bottom of the file reads **Initialization Sequence Completed**, keep the process running and open a new terminal window
