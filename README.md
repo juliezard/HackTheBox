@@ -1,3 +1,3 @@
 # HackTheBox
 
-These are my notes for HTB
+Note-taking for HTB
