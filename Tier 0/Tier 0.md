@@ -31,7 +31,7 @@ Use command **cat** (concatenate) to read data from file and output the content
 
 
 # Machine: Fawn
-FTP (file transfer protocol)
+FTP (file transfer protocol) is the network protocol for transmitting files between computers
 - **ftp {target_IP}** 
 ![fawn_nmap](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/fawn_nmap.png?raw=true)
 ![fawn_ftp](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/fawn_ftp.png?raw=true)
