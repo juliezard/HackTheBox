@@ -47,11 +47,11 @@ SMB (Server Message Block) port 445
 - **smbclient -L {target_IP}**
   - **-L** will list all services available on the server
   ![dancing_smbclient](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_smbclient.png?raw=true)
-  - **smb client \\\\{target_IP}\\{sharename}
-  - ![dancing_smbclient1](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_smbclient1.png?raw=true)
+  - **smb client \\\\{target_IP}\\{sharename}**
+  ![dancing_smbclient1](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_smbclient1.png?raw=true)
   - (IPC$ - The inter-process communication share. Used for inter-process communication via named
 pipes and is not part of the file system.)
   - Use command **get** to download files from remote computer to the local computer
-  - ![dancing_smbclient2](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_smbclient2.png?raw=true)
+  ![dancing_smbclient2](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_smbclient2.png?raw=true)
   - Use command **cat** (concatenate) to read data from file and output the content
-  - ![dancing_cat](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_cat.png?raw=true)
+  ![dancing_cat](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/dancing_cat.png?raw=true)
