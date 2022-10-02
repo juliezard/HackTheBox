@@ -99,3 +99,4 @@ The command-line interface (CLI) is a powerful tool that gives you complete acce
 functionalities if you are developing a software or tool that needs to interact with it.
 - **redis-cli -h {target_IP}**
   -  info returns information and statistics about the Redis server
+![redeemer_redis](https://github.com/juliezard/HackTheBox/blob/main/Tier%200/images/redeemer_redis.png?raw=true)
