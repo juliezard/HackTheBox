@@ -1,4 +1,5 @@
 **sudo apt install {package_name}**
+
 **sudo apt-get update** downloads the package lists from the repositories and "updates" them to get information on the newest versions of packages and their dependencies
 
 # Machine: Meow
