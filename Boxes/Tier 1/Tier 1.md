@@ -91,4 +91,5 @@ SELECT * FROM {table_name}; : Prints out all the data from the table {table_name
   - ```SHOW tables;``` to check the tables
   - ```SELECT * FROM config;``` to see our query of config
 
-![sequel_mysql1](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/sequel_mysq1.png?raw=true)
+![sequel_mysql1](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/sequel_mysql1.png?raw=true)
+
