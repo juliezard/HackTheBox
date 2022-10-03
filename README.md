@@ -1,3 +1,7 @@
 # HackTheBox
 
-Note-taking for HTB
+Notes for HackTheBox
+
+https://www.hackthebox.com/
+
+My profile: hackthebox.com/home/users/profile/1125753
