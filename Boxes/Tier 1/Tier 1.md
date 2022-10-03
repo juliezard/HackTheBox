@@ -1,6 +1,6 @@
 #  Machine: Appointment
 
-## Exploit: SQL Injection
+## Exploit: SQL Injection 
 
 Nmap is a tool used to find open ports on a target
 - ```sudo nmap {target_IP}```
@@ -14,6 +14,10 @@ ports 80 TCP, 443 TCP, and alternatively on HTTP ports such as 8080 TCP or 8000 
  ![appointment_nmap](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/appointment_nmap.png?raw=true)
 
 Since port 80 is open (http) we can go to the IP in our browser
+
+**Gobuster**
+```git clone https://github.com/danielmiessler/SecLists.git``` command downloads the wordlist
+```gobuster dir --url http://{target_IP}/ --wordlist {wordlist_location}/directory-list-2.3-small.txt
 
 Default credentials
 - admin:admin
@@ -62,7 +66,6 @@ We can login with any password in the password field
 
 ## Exploit: SQL database with mysql
 
-Nmap is a tool used to find open ports on a target
 - ```sudo nmap {target_IP}```
   - ```sudo nmap -sC -sV {target_IP}```
     - ```-sV``` switch, stands for version detection 
@@ -97,4 +100,22 @@ SELECT * FROM {table_name}; : Prints out all the data from the table {table_name
 
 ## Exploit: FTP
 
+- ```sudo nmap {target_IP}```
+  - ```sudo nmap -sC -sV {target_IP}```
+    - ```-sV``` switch, stands for version detection 
+    - ```-sC``` performs a script scan using the default set of scripts
+
 ![crocodile_nmap](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/crocodile_nmap.png?raw=true)
+
+- Port 21 is open, ftp to the target IP
+  - Use command ```get``` to download files from remote computer to the local computer
+  - Use command ```bye``` to leave ftp
+
+![crocodile_ftp](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/crocodile_ftp.png?raw=true)
+
+- Use command ```cat``` (concatenate) to read data from file and output the contents
+
+![crocodile_cat](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/crocodile_cat.png?raw=true)
+
+**Gobuster**
+```gobuster dir --url http://{target_IP}/ --wordlist {wordlist_location}/directory-list-2.3-small.txt```
