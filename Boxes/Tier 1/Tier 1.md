@@ -121,6 +121,7 @@ SELECT * FROM {table_name}; : Prints out all the data from the table {table_name
 **Gobuster**
 
 ```gobuster dir --url http://{target_IP}/ --wordlist {wordlist_location}/directory-list-2.3-small.txt -x php,html```
+
 gobuster dir --url http://10.129.235.89 --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -x php,html
 
 ![crocodile_gobuster](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/crocodile_gobuster.png?raw=true)
