@@ -77,7 +77,7 @@ We can login with any password in the password field
 - ```mysql -h {target_IP} -u root```
   - -h : Connect to host.
   - -u : User for log-in if not current user.
-  - 
+
 ![sequel_mysql](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/sequel_mysql.png?raw=true)
 
 - mysql commands
