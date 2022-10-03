@@ -35,7 +35,7 @@ Try accounts:
 
 ![meow_telnet2](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%200/images/meow_telnet2.png?raw=true)
 
-- Use command ```cat``` (concatenate) to read data from file and output the 
+- Use command ```cat``` (concatenate) to read data from file and output the contents
 
 ![meow_telnet3](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%200/images/meow_telnet3.png?raw=true)
 
