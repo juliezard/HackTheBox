@@ -60,7 +60,7 @@ We can login with any password in the password field
  
 #  Machine: Sequel
 
-## Exploit: SQL database
+## Exploit: SQL database with mysql
 
 Nmap is a tool used to find open ports on a target
 - ```sudo nmap {target_IP}```
@@ -93,3 +93,8 @@ SELECT * FROM {table_name}; : Prints out all the data from the table {table_name
 
 ![sequel_mysql1](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/sequel_mysql1.png?raw=true)
 
+#  Machine: Crocodile
+
+## Exploit: FTP
+
+![crocodile_nmap](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/crocodile_nmap.png?raw=true)
