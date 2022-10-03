@@ -17,7 +17,7 @@ Since port 80 is open (http) we can go to the IP in our browser
 
 **Gobuster**
 ```git clone https://github.com/danielmiessler/SecLists.git``` command downloads the wordlist
-```gobuster dir --url http://{target_IP}/ --wordlist {wordlist_location}/directory-list-2.3-small.txt
+```gobuster dir --url http://{target_IP}/ --wordlist {wordlist_location}/directory-list-2.3-small.txt -x php,html```
 
 Default credentials
 - admin:admin
@@ -28,6 +28,7 @@ Default credentials
 
 SQL injection
 example how authentication works 
+
 ```
 <?php
 mysql_connect("localhost", "db_username", "db_password"); # Connection to the SQL
@@ -118,4 +119,14 @@ SELECT * FROM {table_name}; : Prints out all the data from the table {table_name
 ![crocodile_cat](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/crocodile_cat.png?raw=true)
 
 **Gobuster**
-```gobuster dir --url http://{target_IP}/ --wordlist {wordlist_location}/directory-list-2.3-small.txt```
+
+```gobuster dir --url http://{target_IP}/ --wordlist {wordlist_location}/directory-list-2.3-small.txt -x php,html```
+gobuster dir --url http://10.129.235.89 --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -x php,html
+
+![crocodile_gobuster](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/crocodile_gobuster.png?raw=true)
+
+- ```http://{target_IP}/login.php``` page
+  - Use the username and password files to log in
+![crocodile_login](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/crocodile_login.png?raw=true)
+
+![crocodile_flag](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/crocodile_flag.png?raw=true)
