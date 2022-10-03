@@ -2,7 +2,9 @@
 
 My write-up/notes for HackTheBox machines
 
-![htb](https://www.hackthebox.com/images/logo-htb.svg](https://www.hackthebox.com/images/logo600.png)
+<!-- ![htb](https://www.hackthebox.com/images/HTB_Logo_Reveal.gif) -->
+
+<img src="https://www.hackthebox.com/images/HTB_Logo_Reveal.gif" width=60% height=60%>
 
 https://www.hackthebox.com/
 
