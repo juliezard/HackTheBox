@@ -14,6 +14,9 @@ Ping is a ICMP echo request, this can be used to test for connection
 ![meow_ping](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%200/images/meow_ping.png?raw=true)
 
 Nmap is a tool used to find open ports on a target
+
+By default, Nmap scans the most common 1,000 ports for each protocol
+
 - ```sudo nmap {target_IP}```
   - ```sudo nmap -sV {target_IP}```
     - ```-sV``` switch stands for version detection 
