@@ -4,6 +4,6 @@
 
 - Responder
   - What is the normal number of packers nmap sends per second?
-    - ```--min-rate {#}``` specify the minimum number of packets Nmap should send per second; 
+    - ```--min-rate {#}``` specifies the minimum number of packets Nmap should send per second
   - Why do we need the hosts file? Why can't I go directly to the website/IP address?
   - 
