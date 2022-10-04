@@ -139,7 +139,7 @@ gobuster dir --url http://10.129.235.89 --wordlist /usr/share/wordlists/dirbuste
 - ```nmap -p- --min-rate {#} -sV {target_IP}```
   - ```-sV``` switch, stands for version detection 
   - ```-p- to scan ports from 1 through 65535``` 
-  - ```--min-rate {#}``` specify the minimum number of packets Nmap should send per second; it speeds up the scan as the number goes higher
+  - ```--min-rate {#}``` specifies the minimum number of packets Nmap should send per second; it speeds up the scan as the number goes higher
 
 nmap -p- --min-rate 5000 -sV
 
