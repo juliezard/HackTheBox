@@ -99,7 +99,7 @@ SELECT * FROM {table_name}; : Prints out all the data from the table {table_name
 
 #  Machine: Crocodile
 
-## Exploit: FTP
+## Exploit: FTP/PHP
 
 - ```sudo nmap {target_IP}```
   - ```sudo nmap -sC -sV {target_IP}```
@@ -131,3 +131,33 @@ gobuster dir --url http://10.129.235.89 --wordlist /usr/share/wordlists/dirbuste
 ![crocodile_login](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/crocodile_login.png?raw=true)
 
 ![crocodile_flag](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/crocodile_flag.png?raw=true)
+
+#  Machine: Responder
+
+## Exploit: 
+
+- ```nmap -p- --min-rate {#} -sV {target_IP}```
+  - ```-sV``` switch, stands for version detection 
+  - ```-p- to scan ports from 1 through 65535``` 
+  - ```--min-rate {#}``` specify the minimum number of packets Nmap should send per second; it speeds up the scan as the number goes higher
+
+nmap -p- --min-rate 5000 -sV
+
+- Port 80 (http) and 5985 (WinRM) are open
+
+![responder_nmap](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/responder_nmap.png?raw=true)
+
+- Windows Remote Management, or WinRM, is a Windows-native built-in remote management protocol that basically uses Simple Object Access Protocol to interact with remote computers and servers, as well as Operating Systems and applications. WinRM allows the user to :
+  - → Remotely communicate and interface with hosts
+  - → Execute commands remotely on systems that are not local to you but are network accessible.
+  - → Monitor, manage and configure servers, operating systems and client machines from a remote location.
+- As a pentester, this means that if we can find credentials (typically username and password) for a user who has remote management privileges, we can potentially get a PowerShell shell on the host.
+
+- If we visit the IP in the browser, we are redirected to Unika.htb
+
+![responder_unika](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/responder_unika.png?raw=true)
+
+- add the IP to the hosts file to redirect
+  - ```echo "{target_IP} unika.htb" | sudo tee -a /etc/hosts```
+
+![responder_unika2](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/responder_unika2.png?raw=true)
