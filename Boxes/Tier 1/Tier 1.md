@@ -151,7 +151,7 @@ nmap -p- --min-rate 5000 -sV
   - *→ Remotely communicate and interface with hosts*
   - *→ Execute commands remotely on systems that are not local to you but are network accessible.*
   - *→ Monitor, manage and configure servers, operating systems and client machines from a remote location.*
-- *As a pentester, this means that if we can find credentials (typically username and password) for a user who has remote management privileges, we can potentially get a PowerShell shell on the host.*
+  - *As a pentester, this means that if we can find credentials (typically username and password) for a user who has remote management privileges, we can potentially get a PowerShell shell on the host.*
 
 - If we visit the IP in the browser, we are redirected to Unika.htb
 
